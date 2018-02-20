@@ -1,0 +1,11 @@
+Person:
+  type: object
+  config:
+    description: "A person"
+    fields:
+      id:
+        type: "Int!"
+        description: "The unique ID of the person."
+      who:
+        type: "String"
+        description: "name"

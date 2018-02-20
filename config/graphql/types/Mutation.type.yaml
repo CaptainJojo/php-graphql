@@ -1,0 +1,11 @@
+Mutation:
+  type: object
+  config:
+    fields:
+      IntroduceApartment:
+        type: Apartment!
+        resolve: "@=mutation('create_apartment', [args['name']])"
+        args:
+          #using input object type is optional, we use it here to be iso with relay mutation example.
+          name:
+            type: String
